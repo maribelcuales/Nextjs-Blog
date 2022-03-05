@@ -11,7 +11,7 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Read{' '}
+          Read{' '} 
           <Link href="/posts/first-post">
             <a>This page!</a>
           </Link>
