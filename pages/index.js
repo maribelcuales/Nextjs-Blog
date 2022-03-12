@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 
-export default function Home() {
+export default function Home(props) {
   return (
     <Layout home>
       <Head>
@@ -17,4 +17,15 @@ export default function Home() {
       </section>
     </Layout>
   )
+}
+
+export async function getStaticProps() {
+  // Get external data from the file system, API, DB, etc. 
+  const data = {} 
+
+  // The value of the `props` key will be
+  // passed to the `Home` component 
+  return {
+    props: {}
+  }
 }
