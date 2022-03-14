@@ -10,8 +10,16 @@ export async function getStaticPaths() {
   };
 }
 
-export default function Post() {
-  return <Layout>...</Layout>;
+export default function Post({ postData }) {
+  return (
+    <Layout>
+      {postData.title}
+      <br />
+      {postData.id}
+      <br />
+      {postData.date}
+    </Layout>
+  );
 }
 
 export async function getStaticProps({ params }) {
