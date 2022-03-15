@@ -26,7 +26,7 @@ export default function Post({ postData }) {
 
 export async function getStaticProps({ params }) {
   // Fetch necessary data for the blog post using params.id
-  const postData = await getPostData(params.id);
+  const postData = await getPostData(params.id)
   return {
     props: {
       postData,
