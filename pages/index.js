@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import Link from "next/link";
-import Date from "../components/date";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
+import Link from "next/link";
+import Date from "../components/date";
 
 export default function Home({ allPostsData }) {
   return (
@@ -13,7 +13,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hi, I'm Maribel! I'm a Full Stack Software Engineer. Let's connect!
+          Hi, I'm <strong>Maribel!</strong> I'm a Full Stack Software Engineer. Let's connect!
         </p>
         <p>
           (This is a sample website - you’ll be building a site like this on{" "}
