@@ -1,5 +1,6 @@
 // Fetching an API ROUTE 
 // The logic for fetching the data from the CMS can be shared by using a lib/ directory. Then it can be shared with getStaticProps.
+/*
 import { loadPosts } from "../lib/load-posts";
 
 // This function runs only on the server side
@@ -8,7 +9,7 @@ export async function getStaticProps() {
   const posts = await loadPosts();
   return { props: { props } };
 }
-
+*/
 
 // FETCHING DATA FROM A CMS 
 // posts will be populated at build time by getStaticProps()
